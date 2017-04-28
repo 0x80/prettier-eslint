@@ -189,8 +189,8 @@ function getSingleQuote(eslintValue, fallbacks) {
     prettierValue = true
   } else if (eslintValue === 'double') {
     prettierValue = false
-  } else {
-    prettierValue = eslintValue
+  } else if (eslintValue === 'backtick') {
+    prettierValue = false
   }
 
   return makePrettierOption('singleQuote', prettierValue, fallbacks, true)
