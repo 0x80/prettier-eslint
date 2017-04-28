@@ -183,6 +183,7 @@ function getParser(eslintValue, fallbacks) {
 }
 
 function getSingleQuote(eslintValue, fallbacks) {
+  console.log('++++++++++\n++++++++++\n++++++++++\n getSingleQuote', eslintValue, fallbacks)
   let prettierValue
 
   if (eslintValue === 'single') {
